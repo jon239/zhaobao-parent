@@ -6,8 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zhaobao-parent" />
+        <module name="zhaobao-eurekaServer" />
+        <module name="zhaobao-manager-web" />
+        <module name="zhaobao-manager-service" />
+        <module name="zhaobao-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eruaker" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eruaker" options="-parameters" />
+      <module name="zhaobao-common" options="-parameters" />
+      <module name="zhaobao-eurekaServer" options="-parameters" />
+      <module name="zhaobao-manager-service" options="-parameters" />
+      <module name="zhaobao-manager-web" options="-parameters" />
+      <module name="zhaobao-parent" options="-parameters" />
+    </option>
   </component>
 </project>
