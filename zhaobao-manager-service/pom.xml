@@ -13,6 +13,11 @@
 
     <dependencies>
         <dependency>
+            <artifactId>zhaobao-common</artifactId>
+            <groupId>com.zhaobao</groupId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>

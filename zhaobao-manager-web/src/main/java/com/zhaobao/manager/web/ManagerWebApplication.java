@@ -29,6 +29,7 @@ public class ManagerWebApplication {
     String serverPort;
     @Autowired
     ManagerServiceInterface managerServiceInterface;
+
     @RequestMapping("/hello/{name}")
     public String sayHello(@PathVariable("name") String name){
         return  "Hello,I'm " + name + ". I'm from "+ springApplicationName +" on" + serverPort;
@@ -37,6 +38,11 @@ public class ManagerWebApplication {
     @RequestMapping("/hi/{name}")
     public String sayHi(@PathVariable("name") String name){
         return  managerServiceInterface.sayHi(name);
+    }
+
+    @RequestMapping("/getUser/{id}")
+    public String getUser(@PathVariable("id") Long id){
+        return  managerServiceInterface.getUser(id);
     }
 
 }
